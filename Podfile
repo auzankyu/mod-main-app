@@ -8,11 +8,11 @@ target 'AppMain' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
   
-  pod 'ModuleA'
+#  pod 'ModuleA', :path => '../ModuleA'
+#  pod 'ModuleC', :path => '../ModuleC'
+  pod 'ModuleA', :git => 'https://github.com/auzankyu/ModuleA.git', :branch => 'main'
   pod 'ModuleC', :git => 'https://github.com/auzankyu/ModuleC.git', :branch => 'main'
   
-  #  pod 'ModuleB', :path => '../ModuleB'
-
 
 end
 
