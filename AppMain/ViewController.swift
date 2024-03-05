@@ -6,8 +6,9 @@
 //
 
 import UIKit
-import ModuleA
-import ModuleC
+import ModuleA //static framework
+import ModuleC //dynamic framework
+import ModuleD //static framework
 
 class ViewController: UIViewController {
     let modA = ModuleA()
@@ -17,6 +18,7 @@ class ViewController: UIViewController {
         view.backgroundColor = .gray
         modA.getModuleA()
         ModuleC.shared.getData()
+        ModuleD.shared.getData()
     }
 
 
